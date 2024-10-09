@@ -1,0 +1,37 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0.0",
+	"FriendlyName": "ModCrashReporter",
+	"Description": "Credit to Panakotta!",
+	"Category": "Modding",
+	"CreatedBy": "MinoDab492",
+	"CreatedByURL": "",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "ModCrashReporter",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	],
+	"PreBuildSteps": {
+		"Win64": [
+			"cd $(PluginDir)\\ModdingCrashReporter && Build_Windows.bat"
+		]
+	},
+	"Plugins": [
+		{
+			"Name": "SML",
+			"Enabled": true,
+			"SemVersion": "^3.8.0-dev"
+		}
+	],
+	"SemVersion": "1.0.0"
+}
